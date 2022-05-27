@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+/* Global */
+:root {
+  --primary-color: rgb(135, 190, 80);
+  --secondary-color: rgb(49, 83, 16);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Colors */
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Button */
+.btn-reg {
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.btn-reg:hover,
+.btn-secondary:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  height: 80px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+a.active,
+.navbar h1 {
+  color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  box-shadow: 0 50vh 0 50vh var(--primary-color);
+}
+
+.credit {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.credit i {
+  font-size: 1.5rem;
+  padding: 10px;
+  color: white;
+}
+
+/* Banner */
+.banner {
+  min-height: 150px;
+  position: relative;
+}
+
+.banner-title {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  bottom: 0px;
+}
+
+.banner-title h1 {
+  font-size: 50px;
+}
+
+.banner-title p {
+  padding-left: 10px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: auto;
+    text-align: center;
+  }
+  .navbar .flex {
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    padding: 20px 0;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-title {
+    align-items: center;
+    position: static;
+    flex-direction: column;
+  }
+  .banner-title p {
+    padding-left: 0px;
+    text-align: center;
+  }
+}

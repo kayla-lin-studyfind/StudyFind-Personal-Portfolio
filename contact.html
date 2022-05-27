@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container flex">
+        <a href="index.html"><h1 class="header">Kayla</h1></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Intro banner -->
+    <section class="banner bg-primary">
+      <div class="container">
+        <div class="banner-title">
+          <h1>Contact</h1>
+          <p>Lets chat...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact flex">
+      <h1>Contact Form</h1>
+      <form id="contact" class="form container" ondblclick="log_console()">
+        <div class="form-control">
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <textarea id="desc" placeholder="Describe your inquiry..."></textarea>
+        </div>
+        <input type="submit" value="Send" class="btn btn-primary" />
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-primary">
+      <div class="credit container flex">
+        <p>Created by Kayla Lin</p>
+        <a href="https://github.com/kayla-lin" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
