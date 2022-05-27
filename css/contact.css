@@ -9,6 +9,7 @@
 
 .form {
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .form textarea,
@@ -27,4 +28,8 @@
 
 .form textarea {
   font-family: inherit;
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
 }
